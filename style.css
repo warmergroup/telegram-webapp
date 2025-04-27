@@ -1,0 +1,52 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.settings-item {
+  transition: background-color 0.2s ease;
+}
+
+.settings-item:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.profile-picture {
+  position: relative;
+  display: inline-block;
+}
+.corner-shape {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-width: 3px 0 0 3px;
+  border-style: solid;
+  border-color: #3b82f6;
+  z-index: 0;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 8px 0;
+}
+
+.settings-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

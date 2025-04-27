@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <div id="app" class="bg-white max-w-[414px] w-full min-h-[100vh] shadow-lg overflow-hidden">
+    <div class="profile-container flex flex-col min-h-screen">
+      <!-- Header -->
+      <header class="p-4 flex items-center relative">
+        <div class="corner-shape"></div>
+        <div class="ml-5 mt-5 text-blue-500 text-xl font-semibold relative z-10">@wdlam</div>
+      </header>
+
+      <!-- Profile-->
+      <div class="px-4 pb-4 flex justify-between">
+        <div class="flex items-center gap-5">
+<!--          profile image -->
+          <div class="w-20 h-20">
+            <img class="w-full h-full object-cover rounded-3xl" src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg" alt="Profile"/>
+          </div>
+
+          <!--profile info-->
+          <div class="">
+            <h1 class="text-xl font-bold mt-2">Alomatxon</h1>
+            <p class="text-gray-500 text-sm">Kament yozib qo'yadi</p>
+          </div>
+        </div>
+
+          <!-- profile edit-->
+          <button class="w-8 h-8 flex items-center justify-center text-gray-600">
+            <i class="fas fa-pen text-sm"></i>
+          </button>
+
+      </div>
+
+      <!-- Account Section -->
+      <section class="px-4 py-2">
+        <h2 class="text-xl font-semibold mb-2">Account</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium">Alomatxon</h3>
+          <p class="text-gray-500 text-sm">Soha/Kasb/Yo'nalish</p>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="font-medium">@wdlam</h3>
+          <p class="text-gray-500 text-sm">Username</p>
+        </div>
+
+        <div class="mb-2">
+          <p class="text-gray-900 font-semibold">Men Microsoft kompaniyasining katta frontend dasturchisiman</p>
+          <p class="text-gray-500 text-sm">Bio</p>
+        </div>
+      </section>
+
+      <div class="divider mx-4"></div>
+
+      <!-- Settings Section -->
+      <section class="px-4 py-2 flex-1">
+        <h2 class="text-xl font-semibold mb-2">Sozlamalar</h2>
+
+        <div class="settings-list">
+          <!-- Notifications -->
+          <div class="settings-item flex items-center py-3 px-1 rounded-lg">
+            <div class="settings-icon mr-4 text-gray-700">
+              <i class="fas fa-bell"></i>
+            </div>
+            <span class="font-medium">Bildirishnomalar</span>
+          </div>
+
+          <!-- Security -->
+          <div class="settings-item flex items-center py-3 px-1 rounded-lg">
+            <div class="settings-icon mr-4 text-gray-700">
+              <i class="fas fa-lock"></i>
+            </div>
+            <span class="font-medium">Havfsizlik</span>
+          </div>
+
+          <!-- Statistics -->
+          <div class="settings-item flex items-center py-3 px-1 rounded-lg">
+            <div class="settings-icon mr-4 text-gray-700">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="font-medium">Statistika</span>
+          </div>
+
+          <!-- Groups -->
+          <div class="settings-item flex items-center py-3 px-1 rounded-lg">
+            <div class="settings-icon mr-4 text-gray-700">
+              <i class="fas fa-users"></i>
+            </div>
+            <span class="font-medium">Guruhlarim</span>
+          </div>
+
+          <!-- Subscribers -->
+          <div class="settings-item flex items-center py-3 px-1 rounded-lg">
+            <div class="settings-icon mr-4 text-gray-700">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <span class="font-medium">Obunachitar</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Language Option -->
+      <section class="mt-auto p-4">
+        <div class="text-blue-500 font-medium flex justify-center pb-4">
+          Language
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
